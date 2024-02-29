@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">EcoCycle</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_signup">Signup</string>
+    <string name="quote">Less Waste, More Future</string>
+    <string name="email">Email</string>
+    <string name="no_hp">Nomor Telepon</string>
+    <string name="nama">Nama</string>
+    <string name="password">Password</string>
+    <string name="password2">Konfirmasi Password</string>
+    <string name="deskripsi">Belum punya akun?</string>
+    <string name="deskripsi_limbah">Deskripsi</string>
+    <string name="daftar">Daftar</string>
+    <string name="home">Home</string>
+    <string name="kamera">Kamera</string>
+    <string name="pesan">Pesan</string>
+    <string name="setting">Setting</string>
+    <string name="info_lokasi">Lokasi Pembuangan</string>
+    <string name="chat">Chat Sekarang</string>
+    <string name="data_pemilik">Data Pemilik Limbah</string>
+    <string name="data_limbah">Data Limbah</string>
+
+    <string name="foto_limbah">Foto Limbah</string>
+
+    <string name="upload_content">Gambar Perusahaan</string>
+    <string name="upload_profil">Foto Profil</string>
+    <string name="upload_gambar">Pilih Gambar</string>
+    <string name="upload_judul">Nama Limbah</string>
+    <string name="upload_alamat">Alamat</string>
+    <string name="upload_button">Unggah Limbah</string>
+    <string name="upload_deskripsi">Deskripsi Limbah</string>
+    <string name="btn_prediksi">Deteksi Limbah</string>
+    <string name="btn_kamera">Kamera</string>
+    <string name="btn_galeri">Pilih Gambar</string>
+    <string name="txt_prediksi">Hasil Deteksi : </string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps_lokasi">Lokasi Tempat Sampah</string>
+    <string name="search_hint">Nama Limbah</string>
+    <string name="simpan_profil">Simpan Perubahan</string>
+
+    <string name="unggah_limbah">Unggah Limbah</string>
+    <string name="pesan_pencarian">Maaf, limbah tidak ditemukan</string>
+    <string name="trash_image">Gambar Tong Sampah</string>
+    <string name="logo_aplikasi">Logo Aplikasi</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="url_artikel">Baca Lebih Lanjut</string>
+    <string name="url_video">Tonton Sekarang</string>
+    <string name="ecocycle_text">Ecocycle</string>
+    <string name="logo_ecocycle">Logo EcoCycle</string>
+    <string name="pilih_limbah">Pilih Limbah</string>
+    <string name="video_limbah">Video</string>
+    <string name="artikel_limbah">Artikel</string>
+
+</resources>

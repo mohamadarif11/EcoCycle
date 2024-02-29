@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_detailLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/company_1" />
+
+        <TextView
+            android:id="@+id/judul_detailLimbah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_extrabold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detailLimbah"
+            tools:text="Nama Limbah" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:backgroundTint="#000000"
+            android:background="@drawable/rounded_corner"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/hintDeskripsi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul_detailLimbah">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_location_detail" />
+
+            <TextView
+                android:id="@+id/alamat_detailLimbah"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/manrope_extrabold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingEnd="7dp"
+                tools:text="Alamat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hintDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/deskripsi_limbah"
+            app:layout_constraintBottom_toTopOf="@id/deskripsi_detailLimbah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_alamat" />
+
+        <TextView
+            android:id="@+id/deskripsi_detailLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/manrope_regular"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pemilikLimbah"
+            app:layout_constraintTop_toBottomOf="@+id/hintDeskripsi"
+            tools:text="Deskripsi" />
+
+        <LinearLayout
+            android:id="@+id/pemilikLimbah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:backgroundTint="@color/light_green"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintBottom_toTopOf="@+id/btn_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_detailLimbah">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pemilik"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/contact_person" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namaPemilikLimbah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_extrabold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="Mohamad Arif" />
+
+                <TextView
+                    android:id="@+id/nomorPemilikLimbah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/manrope_regular"
+                    android:textColor="@color/white"
+                    tools:text="082117660379" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_chat"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/dark_green"
+            android:fontFamily="@font/manrope_extrabold"
+            android:text="@string/chat"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:icon="@drawable/baseline_chat_24"
+            app:iconGravity="textStart"
+            app:iconSize="23dp"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pemilikLimbah" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
